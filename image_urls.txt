@@ -426,9 +426,9 @@ https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2F
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Karaka&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Karaka&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Australis&format=jpg
-https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Australis&format=jpghttps://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Borealis&format=jpg
+https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Australis&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Borealis&format=jpg
-https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Media&format=jpg
+https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Borealis&format=jpghttps://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Media&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaus Media&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaveh&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kaveh&format=jpg
@@ -442,6 +442,7 @@ https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2F
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kochab&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Koeia&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Koeia&format=jpg
+https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Koit&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Koit&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kornephoros&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Kornephoros&format=jpg
@@ -555,6 +556,7 @@ https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2F
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Mothallah&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Mouhoun&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Mouhoun&format=jpg
+https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Mpingo&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Mpingo&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Muliphein&format=jpg
 https://alasky.u-strasbg.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FDSS2%2Fcolor&width=500&height=500&fov=1&projection=SIN&coordsys=icrs&rotation_angle=0.0&object=Muliphein&format=jpg

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Classification</title>
+</head>
+<body>
+    <h1>Star Classification</h1>
+
+    <button id="start">Start Program</button>
+
+    <form id="uploadForm" enctype="multipart/form-data" style="display: none;">
+        <label for="fileInput">Choose a file:</label>
+        <input type="file" id="fileInput" name="file" accept="image/*">
+        <button type="button" onclick="classify()">Classify</button>
+    </form>
+
+    <div id="displayArea"></div>
+
+    <div id="label-container"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script>
+        window.onload = () => {
+            document.getElementById("start").onclick = () => {
+                document.getElementById("uploadForm").style.display = "block";
+                console.log("hi");
+                init();
+            }
+        }
+
+        const URL = "https://teachablemachine.withgoogle.com/models/3Qe6xLKFT/";
+
+        let model, labelContainer, predictions, canvas, ctx;
+
+        async function init() {
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            console.log(maxPredictions);
+            // for (let i = 0; i < maxPredictions; i++) { // and class labels
+            //     labelContainer.appendChild(document.createElement("div"));
+            // }
+        }
+
+        function handleFileUpload() {
+            var input = document.getElementById('fileInput');
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+                let res;
+                reader.onload = (e) => {
+                    var displayArea = document.getElementById('displayArea');
+                    displayArea.innerHTML = '<h2>Uploaded Image:</h2>';
+                    // Create an image element and set its source to the uploaded file
+                    var image = new Image();
+                    return new Promise((resolve, reject) => {
+                        image.onload = () => {
+                            resolve(image);
+                            canvas = document.createElement("canvas");
+                            canvas.width = 224;
+                            canvas.height = 224;
+                            ctx = canvas.getContext("2d");
+                            ctx.drawImage(image, 0, 0, 224, 224);
+                            // ctx.width = 224;
+                            // ctx.height = 224;
+                            // console.log(canvas);
+                            // res = canvas;
+                            // predict();
+                            // return res;
+                            return canvas;
+                        }
+                        res = image.onload();
+                        // console.log(canvas);
+                        console.log(res);
+                        image.src = e.target.result;
+                        console.log(image.src);
+                        displayArea.appendChild(image);
+                        predict(res);
+                        // return res;
+                    });
+                };
+
+                reader.readAsDataURL(file);
+                // return reader.onload(reader.result);
+            } else {
+                alert('Please choose a file to upload.');
+            }
+        }
+
+        async function predict(canvas) {
+            // let canvas = document.createElement("canvas");
+            // let ctx = canvas.getContext("2d");
+            // console.log(canvasElement);
+            const prediction = await model.predict(canvas, false);
+            labelContainer = document.getElementById("label-container");
+            // const prediction = await model.predict();
+            // const prediction = await model.predict(webcam.canvas);
+            // for (let i = 0; i < maxPredictions; i++) {
+            //     const classPrediction =
+            //         prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            //     labelContainer.childNodes[i].innerHTML = classPrediction;
+            // }
+            console.log(prediction);
+        }
+
+        async function classify() {
+            let imageData = handleFileUpload();
+            console.log(imageData);
+            // handleFileUpload();
+            // console.log(canvas);
+            // console.log(imageData);
+            // await predict(imageData);
+        }
+    </script>
+</body>
+</html>
