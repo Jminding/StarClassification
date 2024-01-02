@@ -77,7 +77,7 @@
                         }
                         res = image.onload();
                         // console.log(canvas);
-                        console.log(res);
+                        // console.log(res);
                         image.src = e.target.result;
                         console.log(image.src);
                         displayArea.appendChild(image);
@@ -106,12 +106,12 @@
             //         prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             //     labelContainer.childNodes[i].innerHTML = classPrediction;
             // }
-            console.log(prediction);
+            // console.log(prediction);
         }
 
         async function classify() {
             let imageData = handleFileUpload();
-            console.log(imageData);
+            // console.log(imageData);
             // handleFileUpload();
             // console.log(canvas);
             // console.log(imageData);

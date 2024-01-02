@@ -29,7 +29,7 @@
 <body style="padding: 0px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Star Classification</a>
+            <a class="navbar-brand" href="index.html">Star Classification</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -100,7 +100,7 @@
 			}
 		}
 
-		async function predict() {
+		async function predict(isRequest) {
 			var image = document.getElementById('imagePreview');
 			const prediction = await model.predict(image, false);
 			for (let i = 0; i < maxPredictions; i++) {
@@ -123,6 +123,10 @@
 			labelContainer.childNodes[maxIndex].style.color = 'green';
 			labelContainer.childNodes[maxIndex].style.fontWeight = 'bold';
 			document.getElementById('result').innerHTML = 'Result: ' + prediction[maxIndex].className + '<br><h4>Confidence: ' + (prediction[maxIndex].probability.toFixed(4) * 100) + '%</h4>';
+			return {
+				result: prediction[maxIndex].className,
+				isRequest: isRequest
+			};
 		}
 	</script>
 
@@ -140,10 +144,47 @@
 				};
 				reader.readAsDataURL(input.files[0]);
 				init().then(() => {
-					predict();
+					predict(false);
 				});
 			}
 		}
+
+		async function requestResult() {
+			await init();
+
+			let isRequest = false;
+			if (window.location.href.includes('?request=true&image=')) {
+				isRequest = true;
+			}
+			let imageSrc = window.location.href.split('?request=true&image=')[1];
+			if (isRequest) {
+				$('#imagePreview').attr('src', imageSrc);
+				document.getElementById("imagePreviewCard").style.display = "block";
+				$('#imagePreview').hide();
+				$('#imagePreview').fadeIn(650);
+			}
+			console.log(isRequest);
+			console.log(document.getElementById('imagePreview'));
+			// predict(isRequest).then((result) => {
+			// 	if (result['isRequest']) {
+			// 		// document.body.innerHTML = result["result"];
+			// 		console.log(result["result"]);
+			// 	}
+			// });
+			setTimeout(() => {
+				predict(isRequest).then((result) => {
+					if (result['isRequest']) {
+						document.body.innerHTML = result["result"];
+						console.log(result["result"]);
+					}
+				});
+			}, 0);
+		}
+		
+		if (window.location.href.includes('?request=true&image=')) {
+			let res = requestResult();
+		}
+
 		$('#imageUpload').change(function () {
 			readURL(this);
 		});
