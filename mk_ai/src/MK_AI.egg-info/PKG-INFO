@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: MK-AI
-Version: 1.0.4
+Version: 1.0.5
 Summary: MK-AI is a Python package that allows you to classify stars using the MK system and machine learning.
 Author-email: Jaymin Ding <jtding43@gmail.com>
 License:                     GNU GENERAL PUBLIC LICENSE

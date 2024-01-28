@@ -1,11 +1,7 @@
 from astropy.io import fits
-import tensorflow as tf
-from tensorflow.keras import layers, models
 import numpy as np
 from PIL import Image
 import os
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.utils import to_categorical
 from sklearn.metrics import r2_score
 import pandas as pd
 from astropy.convolution import convolve

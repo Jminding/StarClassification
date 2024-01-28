@@ -100,8 +100,7 @@
 		// 	getProvidedImageURL();
 		// }
 
-		const URL = 'https://storage.googleapis.com/tm-model/3Qe6xLKFT/';
-		const URL2 = 'https://storage.googleapis.com/tm-model/in84lxb73/';
+		const URL = 'https://starclassification.pages.dev';
 
 		let model, labelContainer, maxPredictions;
 		let model2, labelContainer2, maxPredictions2;
@@ -110,8 +109,8 @@
 		async function init() {
 			const modelURL = URL + 'model.json';
 			const metadataURL = URL + 'metadata.json';
-			const model2URL = URL2 + 'model.json';
-			const metadata2URL = URL2 + 'metadata.json';
+			const model2URL = URL + 'model2.json';
+			const metadata2URL = URL + 'metadata2.json';
 
 			// load the model and metadata
 			model = await tmImage.load(modelURL, metadataURL);

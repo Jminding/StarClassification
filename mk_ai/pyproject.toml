@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "MK-AI"
-version = "1.0.4"
+version = "1.0.5"
 description = "MK-AI is a Python package that allows you to classify stars using the MK system and machine learning."
 readme = "README.md"
 authors = [{ name = "Jaymin Ding", email = "jtding43@gmail.com" }]

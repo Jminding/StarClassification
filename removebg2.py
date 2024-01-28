@@ -7,7 +7,7 @@ from astropy.visualization import SqrtStretch
 from astropy.visualization.mpl_normalize import ImageNormalize
 from photutils.aperture import CircularAperture
 
-hdu = fits.open("Star Images/Acamar.fits")
+hdu = fits.open("Star Images/Acamar.jpg")
 data = hdu[0].data
 mean, median, std = sigma_clipped_stats(data, sigma=3.0)
 print((mean, median, std))
