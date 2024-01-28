@@ -225,8 +225,9 @@ class MKAI:
         return absolute_magnitude
 
 if __name__ == "__main__":
-    test = MKAI()
+    test = MKAI(verbose=True)
     spectral_class, _ = test.get_spectral_class("https://jminding.github.io/StarPhotos/Alnitak.jpg", url=True)
     luminosity_class, _ = test.get_luminosity_class("https://jminding.github.io/StarPhotos/Alnitak.jpg", url=True)
-    print(test.get_absolute_magnitude(spectral_class, luminosity_class))
+    print(spectral_class, luminosity_class)
+    # print(test.get_absolute_magnitude(spectral_class, luminosity_class))
     test.quit()
