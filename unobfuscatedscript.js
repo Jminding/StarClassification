@@ -1,5 +1,6 @@
 const URL = 'https://storage.googleapis.com/tm-model/3Qe6xLKFT/';
 const URL2 = 'https://storage.googleapis.com/tm-model/in84lxb73/';
+const URL3 = 'https://storage.googleapis.com/tm-model/nZDP1oM63/';
 
 let model, labelContainer, maxPredictions;
 let model2, labelContainer2, maxPredictions2;
@@ -10,6 +11,8 @@ async function init() {
     const metadataURL = URL + 'metadata.json';
     const model2URL = URL2 + 'model.json';
     const metadata2URL = URL2 + 'metadata.json';
+    const model3URL = URL3 + 'model.json';
+    const metadata3URL = URL3 + 'metadata.json';
 
     // load the model and metadata
     model = await tmImage.load(modelURL, metadataURL);
